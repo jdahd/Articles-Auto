@@ -1,0 +1,10 @@
+customtkinter
+requests
+beautifulsoup4
+html2text
+Pillow
+pyperclip
+windnd
+python-docx
+htmldocx
+pyinstaller
