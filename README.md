@@ -85,3 +85,65 @@ python app.py
 
 本项目仅供学习和个人存档使用。请勿用于批量爬取、商业用途或侵犯版权的行为。使用者需自行承担使用本工具产生的所有责任。
 
+
+# Article Purifier
+
+[![GitHub stars](https://img.shields.io/github/stars/jdahd/Article-Purifier?style=social)](https://github.com/jdahd/Article-Purifier/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/jdahd/Article-Purifier?style=social)](https://github.com/jdahd/Article-Purifier/network/members)
+[![GitHub license](https://img.shields.io/github/license/jdahd/Article-Purifier)](https://github.com/jdahd/Article-Purifier/blob/main/LICENSE)
+[![Python Version](https://img.shields.io/badge/python-3.8%2B-blue)](https://www.python.org/downloads/)
+
+A clean, cross-platform desktop tool for **downloading, purifying, and converting WeChat Official Account articles** into structured formats (Markdown, HTML, Word, MindMap), with optional **local AI integration (Ollama)** for auto-summarization and keyword extraction.
+
+> 🚧 **Future Roadmap**: This tool will evolve into a full-featured **Personal Local Knowledge Library** with bidirectional links, knowledge graph visualization, note-taking, and offline RAG. Stay tuned!
+
+---
+
+## ✨ Core Features
+- 📥 **Single/Batch Download**: Download WeChat articles via URL, auto-skip duplicates
+- 🧹 **Auto-Purification**: Remove ads, comments, irrelevant widgets, and preserve original content structure
+- 📝 **Multi-Format Export**:
+  - Markdown (with YAML Frontmatter, perfect for Obsidian/Notion)
+  - HTML (with local images, offline viewable)
+  - Word (.docx)
+  - MindMap (OPML format, compatible with XMind/MindManager)
+- 🖼️ **Local Image Download**: Auto-download and embed all images in articles
+- 🤖 **Optional Local AI (Ollama)**:
+  - Auto-generate 200-word summaries
+  - Extract 3-5 core keywords
+  - No internet required, no data leakage
+- 🎨 **Clean GUI**: Built with CustomTkinter, supports light/dark mode
+- 📦 **Portable EXE**: Packaged with PyInstaller, no Python installation needed for end-users
+
+---
+
+## 🛠️ Tech Stack
+- **Core Language**: Python 3.8+
+- **GUI**: CustomTkinter
+- **Web Scraping**: BeautifulSoup4, Requests
+- **Markdown Conversion**: html2text
+- **PDF/Word Export**: WeasyPrint (PDF), python-docx (Word)
+- **MindMap Generation**: xml.etree.ElementTree
+- **Local AI**: Ollama API
+- **Packaging**: PyInstaller
+
+---
+
+## 🚀 Quick Start
+
+### Option 1: Use Portable EXE (Windows Only)
+1. Go to the [Releases](https://github.com/jdahd/Article-Purifier/releases) page
+2. Download the latest `Article-Purifier.exe`
+3. Double-click to run (no installation required)
+
+### Option 2: Run from Source Code (All Platforms)
+#### Prerequisites
+- Python 3.8 or higher
+- (Optional) Ollama installed and running for local AI features
+
+#### Steps
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/jdahd/Article-Purifier.git
+   cd Article-Purifier
+
