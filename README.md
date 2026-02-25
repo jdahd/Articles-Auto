@@ -1,4 +1,4 @@
-# Text Purifier (Article Purifier)
+# Article with Auto and comfortable
 
 一款优雅的微信公众号文章提取与转换工具。
 
@@ -84,3 +84,4 @@ python app.py
 ## ⚠️ 免责声明
 
 本项目仅供学习和个人存档使用。请勿用于批量爬取、商业用途或侵犯版权的行为。使用者需自行承担使用本工具产生的所有责任。
+
